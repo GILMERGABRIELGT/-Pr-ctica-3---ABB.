@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Libros</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Catálogo de Libros</h1>
+    <div class="form-container">
+      <form id="addBookForm">
+        <h2>Agregar Libro</h2>
+        <label for="isbn">ISBN:</label>
+        <input type="text" id="isbn" required>
+        <label for="title">Título:</label>
+        <input type="text" id="title" required>
+        <button type="submit">Agregar</button>
+      </form>
+
+      <form id="searchBookForm">
+        <h2>Buscar Libro</h2>
+        <label for="searchISBN">ISBN:</label>
+        <input type="text" id="searchISBN" required>
+        <button type="submit">Buscar</button>
+      </form>
+
+      <form id="deleteBookForm">
+        <h2>Eliminar Libro</h2>
+        <label for="deleteISBN">ISBN:</label>
+        <input type="text" id="deleteISBN" required>
+        <button type="submit">Eliminar</button>
+      </form>
+    </div>
+
+    <div class="catalog">
+      <h2>Catálogo Ordenado</h2>
+      <ul id="catalogList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
